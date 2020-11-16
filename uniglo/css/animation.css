@@ -1,0 +1,95 @@
+.cloud {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 overflow: hidden;
+}
+.cloud img {
+	position: absolute;
+	bottom: 0;
+	max-width: 50%;
+	animation: animate calc(8s*var(--i)) linear infinite;	
+}
+@keyframes animate {
+	0%
+	{
+		transform: translateX(-100%);
+	}
+	100%
+	{
+		transform: translateX(100%);
+	}
+}
+.containerface{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 60px;
+}
+.face {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background: linear-gradient(180deg, #f44336,#f44336, #ffcd00);
+	justify-content: center;
+	align-items: center;
+	margin: 0 20px;	
+}
+.face:hover {
+	background: #ffcd00;
+}
+.face:before{
+	content: '';
+	position: absolute;
+	left: 70px;
+	top: 210px;
+	width: 150px;
+	height: 20px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	background: #9d0b00;
+	transition: 0.5s;
+
+}
+.face:hover:before{
+	top: 180px;
+	
+	width: 150px;
+	height: 70px;
+	border-bottom-left-radius: 70px;
+	border-bottom-right-radius: 70px;
+	background: #b57700;
+}
+.eyes{
+	position: relative;
+    top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.eyes .eye {
+	position: relative;
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 6px 0px 12px 42px;
+    background: #fff;
+    border-radius: 50%;
+}
+.eyes .eye:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	transform: translate(-50%, -50%);
+	width: 40px;
+	height: 40px;
+	background: #333;
+	border-radius: 50%;
+}
+#face{
+	cursor: url('../img/curs.png'), pointer;
+}
