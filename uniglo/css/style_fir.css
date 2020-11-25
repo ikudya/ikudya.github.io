@@ -19,7 +19,8 @@
 	float: right;
 }
 .services_item:nth-child(2) {
-	margin-left: 60px; 
+	margin-left: 15%;
+    margin-right: 15%:  
 }
 #services{
 	padding-bottom: 120px;
@@ -31,11 +32,24 @@
 .works {
 	margin-top: 35px;
 }
-.works img {
-	float: left;
+.gallery {
+    margin-top: 67px;
+    margin-left: 13%;
+    justify-content: space-between;
+}
+
+.gallery img {
+    transition: all 0.5s ease;
     width: 291px;
     height: 350px;
-    margin-left: 19px;
+}
+
+.gallery img:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transform: scale(1.1);
+}
+.owl-carousel owl-theme{
+    display: none;
 }
 .about h3{
 	font-size: 18px;
