@@ -3,10 +3,7 @@ $(function () {
 		e.preventDefault();
 		$('.menu').toggleClass('show-menu')
 	})
-	$('ul.menu li a').click(function (e) {
-		e.preventDefault();
-		$('.menu').toggleClass('show-menu')
-	})
+	
 	$('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
